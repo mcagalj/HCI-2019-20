@@ -7,6 +7,7 @@
 - [Zadaće i korisnici koje aplikacija treba podržati](#zadaće-i-korisnici-koje-aplikacija-treba-podržati)
 - [Demonstracija projekta - tehnički zahtjevi](#demonstracija-projekta---tehnički-zahtjevi)
 - [Korisni savjeti i reference](#korisni-savjeti-i-reference)
+  - [Primjeri _low-fidelity_ i _high-fidelity_ prototipa](#primjeri-_low-fidelity_-i-_high-fidelity_-prototipa)
   - [Primjer izvještaja](#primjer-izvještaja)
 
 ## FESB, Računarstvo, 2019/20 <!-- omit in toc -->
@@ -73,20 +74,18 @@ Zadaće i korisnici koje vaša aplikacija treba podržati opisani su u nastavku.
 ### Korisnici <!-- omit in toc -->
 
 - Vaša aplikacija namjenjena je širokom krugu korisnika
-- Baza korisnika uključuje i osobe čija informatička pismenost ne mora nužno biti na vašoj razini. Korisnici tako mogu biti i _osobe starije životne dobi_ (60 i više godina) koje:
-  - sporo tipkaju
-  - imaju slabiji vid
-  - imaju slab sluh
+- Baza korisnika uključuje i osobe čija informatička pismenost ne mora nužno biti na vašoj razini
+- Korisnici tako mogu biti i _osobe starije životne dobi_ (60 i više godina) koje sporo tipkaju, imaju slabiji vid, imaju slab sluh
 
 ## Demonstracija projekta - tehnički zahtjevi
 
-1. Studenti će pokazati optimiziranu produkcijsku verziju projekta; u tom smislu [Gatsby.js](https://www.gatsbyjs.org) će za vas odraditi _heavy lifting_ na projektu.
-
-2. Produkcijska verzija projekta treba biti postavljena _online_ na odgovarajuću _cloud_ platformu ([Netlify](https://www.netlify.com/), [Heroku](https://www.heroku.com/), [Azure](https://azure.microsoft.com), ...).
-
-3. Studenti će preliminarno analizirati performanse aplikacije korištenjem Google-ovog [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) alata.
+- Studenti će pokazati optimiziranu produkcijsku verziju projekta; u tom smislu [Gatsby.js](https://www.gatsbyjs.org) će za vas odraditi _heavy lifting_ na projektu
+- Produkcijska verzija projekta treba biti postavljena _online_ na odgovarajuću _cloud_ platformu ([Netlify](https://www.netlify.com/), [Heroku](https://www.heroku.com/), [Azure](https://azure.microsoft.com), ...)
+- Studenti će preliminarno analizirati performanse aplikacije korištenjem Google-ovog [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) alata
 
 ## Korisni savjeti i reference
+
+### [Primjeri _low-fidelity_ i _high-fidelity_ prototipa](prototyping/README.md)
 
 ### Primjer izvještaja
 
