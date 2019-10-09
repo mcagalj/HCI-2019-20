@@ -34,7 +34,7 @@ Ugrubo, razlikujemo sljedeće faze u ovom procesu:
   
    > Vi niste tipičan korisnik. Ne znate koje zadaće su važne korisnicima. Da bi bili sigurni da imate dobar opis zadaća trebate ih evaluirati zajedno s korisnicima.
    >
-   > _Features_ nisu zadaće koje korisnite treba obaviti. Gomilanjem _feature_-a vaša aplikacija neće biti bolja već upravo suprotno. Razumijevanje stvarnih potreba korisnika i stvarnih zadaća koje korisnik treba izvršiti ključ je uspjeha.
+   > _Features_ nisu zadaće koje korisnik treba obaviti. Gomilanjem _feature_-a vaša aplikacija neće biti bolja već upravo suprotno. Razumijevanje stvarnih potreba korisnika i stvarnih zadaća koje korisnik treba izvršiti ključ je uspjeha.
 
 2. **Izrada _low-fidelity_ i _high-fidelity_ prototipa i njihova evaluacija**
 

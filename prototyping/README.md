@@ -1,35 +1,25 @@
 # Primjeri _low-fidelity_ i _high-fidelity_ prototipa
 
+<style type="text/css">
+    img[src*="#border"] {
+        width: 500px;
+        border: 1px solid #cccccc;
+    }
+</style>
+
 ## _Low-fidelity_
 
 Realizirano u [Inkscape](https://inkscape.org).
 
-<p align="center">
-    <img src="../img/layout.png"width="500px"/>
-</p>
+![Inkscape - layout](../img/layout.png "Basic layouts")
 
 ## _High-fidelity_
 
+
 Realizirano u [Figma](https://www.figma.com/).
 
-<p align="center" style="margin-top: 3rem;">
-    <img style="border: 1px solid #ccc" src="../img/Frame_1.png"width="500px"/>
-    <br/>
-    <em>Home page - default</em>    
-</p>
-<br/>
-<br/>
+![Home page - default](../img/Frame_1.png#border "Home page -default")
 
-<p align="center" style="margin-top: 3rem;">
-    <img style="border: 1px solid #ccc" src="../img/Frame_4.png"width="500px"/>
-        <br/>
-    <em>Home page - logged in</em> 
-</p>
-<br/>
-<br/>
+![Home page - logged in](../img/Frame_4.png#border "Home page logged in")
 
-<p align="center" style="margin-top: 3rem;">
-    <img style="border: 1px solid #ccc" src="../img/Frame_7.png"width="500px"/>
-    <br/>
-    <em>Q&A page - logged in</em> 
-</p>
+![Q&A page - logged in](../img/Frame_7.png#border "Q&A page - logged in")
