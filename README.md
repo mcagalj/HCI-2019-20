@@ -7,8 +7,9 @@
 - [Zadaće i korisnici koje aplikacija treba podržati](#zadaće-i-korisnici-koje-aplikacija-treba-podržati)
 - [Demonstracija projekta - tehnički zahtjevi](#demonstracija-projekta---tehnički-zahtjevi)
 - [Korisni savjeti i reference](#korisni-savjeti-i-reference)
-  - [Primjeri _low-fidelity_ i _high-fidelity_ prototipa](#primjeri-_low-fidelity_-i-_high-fidelity_-prototipa)
-  - [Primjer izvještaja](#primjer-izvještaja)
+  - [Bits of design](#bits-of-design)
+  - [Bits of JavaScript and React](#bits-of-javascript-and-react)
+  - [Primjeri izvještaja](#primjeri-izvještaja)
 
 ## FESB, Računarstvo, 2019/20 <!-- omit in toc -->
 
@@ -22,7 +23,7 @@ Izrada projekta odvijati će se u nekoliko faza kako je to prikazano na slici u 
 
 <!-- markdownlint-disable MD033 -->
 <p align="center">
-    <img src="./img/interface_design_process.png" width="600px" height="auto"/>
+    <img src="./images/interface_design_process.png" width="600px" height="auto"/>
     <br><br>
     <em>Iterative design process (source: <a href="http://saul.cpsc.ucalgary.ca/pmwiki.php/HCIResources/HCILectures">Saul Greenberg</a>)</em>
 </p>
@@ -85,8 +86,14 @@ Zadaće i korisnici koje vaša aplikacija treba podržati opisani su u nastavku.
 
 ## Korisni savjeti i reference
 
-### [Primjeri _low-fidelity_ i _high-fidelity_ prototipa](prototyping/README.md)
+### Bits of design
 
-### Primjer izvještaja
+  1. [Primjeri _low-fidelity_ i _high-fidelity_ prototipa](bits-of-design/prototyping/README.md)
+
+### Bits of JavaScript and React
+
+  1. [JavaScript for React](bits-of-javascript-react/javascript-for-react/README.md) 
+
+### Primjeri izvještaja
 
 U direktoriju [docs](docs/) možete naći nekoliko primjera izvještaja o radu na projektu _starijih kolega_.

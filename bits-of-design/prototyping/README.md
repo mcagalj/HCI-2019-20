@@ -1,11 +1,11 @@
-# Primjeri _low-fidelity_ i _high-fidelity_ prototipa
+# Primjeri _low-_ i _high-fidelity_ prototipa
 
 ## _Low-fidelity_
 
 Realizirano u [Inkscape](https://inkscape.org).
 
 <p align="center">
-    <img src="../img/layout.png" width="500"/>
+    <img src="./images/layout.png" width="500"/>
 </p>
 
 ## _High-fidelity_
@@ -14,7 +14,7 @@ Realizirano u [Inkscape](https://inkscape.org).
 Realizirano u [Figma](https://www.figma.com/).
 
 <p align="center">
-    <img src="../img/Frame_1.png" width="500"/>
+    <img src="./images/Frame_1.png" width="500"/>
     <br/>
     <em>Home page - default</em>
 </p>
@@ -22,7 +22,7 @@ Realizirano u [Figma](https://www.figma.com/).
 <br/>
 
 <p align="center">
-    <img src="../img/Frame_4.png" width="500"/>
+    <img src="./images/Frame_4.png" width="500"/>
     <br/>
     <em>Home page - logged in</em>
 </p>
@@ -30,7 +30,7 @@ Realizirano u [Figma](https://www.figma.com/).
 <br/>
 
 <p align="center">
-    <img src="../img/Frame_7.png" width="500"/>
+    <img src="./images/Frame_7.png" width="500"/>
     <br/>
     <em>Q&A - logged in</em>
 </p>
