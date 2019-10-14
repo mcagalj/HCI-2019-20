@@ -19,7 +19,9 @@
   - [Examples in React](#examples-in-react-4)
 - [Arrays](#arrays)
   - [Examples in React](#examples-in-react-5)
-- [ESModules](#esmodules)
+- [JavaScript module system (ES modules)](#javascript-module-system-es-modules)
+  - [`export` and `import` statements](#export-and-import-statements)
+  - [Examples in React](#examples-in-react-6)
 
 Za efektivno korištenje React.js biblioteke dobro je poznavati moderne funkcionalnosti JavaScript jezika (ES6+). U nastavku ćemo pokazati dio modernih aspekata i funkcionalnosti JavaScript za efektan rad s Reactom.
 
@@ -173,7 +175,7 @@ console.log(securityService) // { isAuthenticated: [Function: isAuthenticated] }
 
 ### Examples in React
 
-```javascript
+```jsx
   return (
     <Auth0Context.Provider
       value={{
@@ -530,6 +532,7 @@ result = frontends.reduce(
 );
 console.log(result); // { a: [ 'react', 'angular' ], e: [ 'react', 'vue' ] }
 ```
+
 ### Examples in React
 
 ```jsx
@@ -560,6 +563,35 @@ const AnswerPane = () => (
 )
 ```
 
-## ESModules
+## JavaScript module system (ES modules)
 
-TBA
+ES moduli omogućuju bolju organizaciju/modularizaciju JS koda, odnosno grupiranje povezanih varijabli i funkcija u nezavisne module.
+
+### `export` and `import` statements
+
+```javascript
+// provider.js file/module
+export default (name='world') => {
+  console.log(`Hello ${name}!`);
+}
+
+export const PI = 3.14;
+```
+
+```javascript
+// consumer.js file/module
+import hello from './provider';
+import { PI } from './provider';
+
+hello('Slavko'); // Hello Slavko!
+console.log(2*PI); // 6.28
+```
+
+### Examples in React
+
+```javascript
+import React, {useState, useEffect} from 'react';
+import { Link } from 'gatsby';
+import { useMutation, useSubscription } from "@apollo/react-hooks";
+import Button from "@material-ui/core/Button";
+```
