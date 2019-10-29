@@ -30,17 +30,17 @@ Za efektivno korištenje React.js biblioteke dobro je poznavati moderne funkcion
 [MDN: Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 
 ```javascript
-console.log('Hello' + ' ' + 'world' + '!') // Hello world!
+console.log("Hello" + " " + "world" + "!"); // Hello world!
 
-const greeting = 'Hello';
-const subject = 'world';
+const greeting = "Hello";
+const subject = "world";
 
 // mind the back-ticks (` `)
-console.log(`${greeting} ${subject}!`) // Hello world!
+console.log(`${greeting} ${subject}!`); // Hello world!
 
 // multiline strings
 console.log(`Hello
-world!`)
+world!`);
 // Hello
 // world!
 ```
@@ -69,7 +69,7 @@ console.log(output); // Ivana studies "Computer science" at FESB.
 #### Graphql tag <!-- omit in toc -->
 
 ```javascript
-import { graphql } from "gatsby"
+import { graphql } from "gatsby";
 
 export const query = graphql`
   query {
@@ -81,13 +81,13 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 ```
 
 #### Styled components <!-- omit in toc -->
 
 ```javascript
-import styled from "styled-components"
+import styled from "styled-components";
 
 const Container = styled.div`
   margin: 3rem auto;
@@ -106,8 +106,8 @@ const Username = styled.h2`
 `;
 
 const Button = styled.button`
-  background: ${props => props.primary ? "black" : "white"};
-  color: ${props => props.primary ? "white" : "black"};
+  background: ${props => (props.primary ? "black" : "white")};
+  color: ${props => (props.primary ? "white" : "black")};
   font-size: 1em;
   margin: 1em;
   padding: 0.25em 1em;
@@ -119,25 +119,25 @@ Primjena definiranih komponenti:
 
 ```jsx
 <Container>
-    <Avatar img="photo.png"/>
-    <Username>John Doe</Username>
-    <Button primary>Default</Button>}
+  <Avatar img="photo.png" />
+  <Username>John Doe</Username>
+  <Button primary>Default</Button>}
 </Container>
 ```
 
 ## Variable declaration (`var`, `let` and `const`)
 
 ```javascript
-var name = 'Ivan';
-let surname = 'Ivanic';
-const gender = 'male';
+var name = "Ivan";
+let surname = "Ivanic";
+const gender = "male";
 ```
 
 Tri jednostavna pravila pri deklaraciji varijabli:
-  
-  1. Ne koristite `var`.
-  2. Kad god je to moguće koristite `const`.
-  3. Koristite `let` kad varijablu želite mijenjati.
+
+1. Ne koristite `var`.
+2. Kad god je to moguće koristite `const`.
+3. Koristite `let` kad varijablu želite mijenjati.
 
 ## Object initializer
 
@@ -145,15 +145,17 @@ Tri jednostavna pravila pri deklaraciji varijabli:
 
 ```javascript
 // old way
-let o = {a: 'foo', b: 42, c: {}};
+let o = { a: "foo", b: 42, c: {} };
 console.log(o); // { a: 'foo', b: 42, c: {} }
 
-const a = 'foo', b = 42, c = {};
-o = {a: a, b: b, c: c};
+const a = "foo",
+  b = 42,
+  c = {};
+o = { a: a, b: b, c: c };
 console.log(o); // { a: 'foo', b: 42, c: {} }
 
 // modern way (EC6+)
-o = {a, b, c};
+o = { a, b, c };
 console.log(o); // { a: 'foo', b: 42, c: {} }
 ```
 
@@ -162,35 +164,45 @@ Koncizna inicjalizacija metoda u objektu:
 ```javascript
 // old way
 const securityService = {
-    isAuthenticated: function(user) { return false; }
-}
-console.log(securityService) // { isAuthenticated: [Function: isAuthenticated] }
+  isAuthenticated: function(user) {
+    return false;
+  }
+};
+console.log(securityService); // { isAuthenticated: [Function: isAuthenticated] }
 
 // modern JavaScript (EC6+)
 const securityService = {
-    isAuthenticated(user) { return false; }
-}
-console.log(securityService) // { isAuthenticated: [Function: isAuthenticated] }
+  isAuthenticated(user) {
+    return false;
+  }
+};
+console.log(securityService); // { isAuthenticated: [Function: isAuthenticated] }
 ```
 
 ### Examples in React
 
 ```jsx
-  return (
-    <Auth0Context.Provider
-      value={{
-        isAuthenticated,
-        user,
-        isAdmin,
-        loading,
-        getToken() {return auth0Client.getToken()},
-        login() {return auth0Client.login()},
-        logout() { return auth0Client.logout()}
-      }}
-    >
-      {children}
-    </Auth0Context.Provider>
-  );
+return (
+  <Auth0Context.Provider
+    value={{
+      isAuthenticated,
+      user,
+      isAdmin,
+      loading,
+      getToken() {
+        return auth0Client.getToken();
+      },
+      login() {
+        return auth0Client.login();
+      },
+      logout() {
+        return auth0Client.logout();
+      }
+    }}
+  >
+    {children}
+  </Auth0Context.Provider>
+);
 ```
 
 ## Destructuring objects
@@ -209,7 +221,7 @@ let followers = user.followers;
 console.log(name, role, followers); // Jean admin 10
 
 // modern EC6+ way
-const {name, role, followers} = user;
+const { name, role, followers } = user;
 console.log(name, role, followers); // Jean admin 10
 ```
 
@@ -218,22 +230,21 @@ const user = { name: "Jean", role: "admin", followers: 10 };
 
 // no destructuring
 function printUser(user) {
-    console.log(user.name, user.role, user.followers);
+  console.log(user.name, user.role, user.followers);
 }
 printUser(user); // Jean admin 10
 
 // with destructuring
-function printUser({name, role, followers}) {
-    console.log(name, role, followers);
+function printUser({ name, role, followers }) {
+  console.log(name, role, followers);
 }
 printUser(user); // Jean admin 10
-
 ```
 
 Destrukturiranje radi i s nizovima (_arrays_):
 
 ```javascript
-const user = ['Jean', 'admin', 10];
+const user = ["Jean", "admin", 10];
 
 // no destructuring
 const name = user[0];
@@ -266,10 +277,10 @@ const NewQuestionForm = () => {
 [MDN: Default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)
 
 ```javascript
-const user = { name: "Jean"};
+const user = { name: "Jean" };
 
-function printUser({name, role = "user", followers = 0}) {
-    console.log(name, role, followers);
+function printUser({ name, role = "user", followers = 0 }) {
+  console.log(name, role, followers);
 }
 printUser(user); // Jean admin 0
 ```
@@ -297,7 +308,7 @@ myFun("one", "two", "three", "four", "five", "six");
 
 ### Spread
 
-S nizovima: 
+S nizovima:
 
 ```javascript
 const arr1 = [0, 1, 2];
@@ -313,8 +324,8 @@ console.log(arr3); // [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]
 S objektima:
 
 ```javascript
-const obj1 = { foo: 'bar', x: 42 };
-const obj2 = { foo: 'baz', y: 13 };
+const obj1 = { foo: "bar", x: 42 };
+const obj2 = { foo: "baz", y: 13 };
 
 const clonedObj = { ...obj1 };
 // Object { foo: "bar", x: 42 }
@@ -328,36 +339,34 @@ const mergedObj = { ...obj1, ...obj2 };
 ```jsx
 const user = { name: "Jean", role: "admin", followers: 10 };
 
-function User({name, role, followers}) {
-    return (
-        <span>{name} with role {role} is followed by {followers}</span>
-    )
+function User({ name, role, followers }) {
+  return (
+    <span>
+      {name} with role {role} is followed by {followers}
+    </span>
+  );
 }
 ```
 
 ```jsx
 // old way
 function UserContainer(user) {
-    return (
-        <div>
-            <User
-                name={user.name}
-                role={user.role}
-                followers={user.followers}
-            />
-        </div>
-    )
+  return (
+    <div>
+      <User name={user.name} role={user.role} followers={user.followers} />
+    </div>
+  );
 }
 ```
 
 ```jsx
 // with spread
 function UserContainer(user) {
-    return (
-        <div>
-            <User {...user}/>
-        </div>
-    )
+  return (
+    <div>
+      <User {...user} />
+    </div>
+  );
 }
 ```
 
@@ -370,34 +379,29 @@ let isAuthenticated = false;
 
 // longer way
 if (isAuthenticated) {
-    console.log('Welcome!');
+  console.log("Welcome!");
 } else {
-    console.log('Please login.');
+  console.log("Please login.");
 }
 
 // more concise
-isAuthenticated ? console.log('Welcome!') : console.log('Please login.')
+isAuthenticated ? console.log("Welcome!") : console.log("Please login.");
 ```
 
 ### Examples in React
 
 ```jsx
-    isAdmin ? (
-        <AnswerForm
-            submitAnswer={submitAnswer}
-            question_id={state.question_id}
-        />
-    ) : (
-        null
-    )
+isAdmin ? (
+  <AnswerForm submitAnswer={submitAnswer} question_id={state.question_id} />
+) : null;
 ```
 
 ```jsx
-    data && data.length ? (
-        <Table data={data} />
-    ) : (
-        <Error message={"Error loading data."} />
-    )
+data && data.length ? (
+  <Table data={data} />
+) : (
+  <Error message={"Error loading data."} />
+);
 ```
 
 ## Arrow functions
@@ -423,7 +427,7 @@ function fun(text) {
 }
 
 // equivalent arrow functions
-const fun_arrow = (text) => console.log(text);
+const fun_arrow = text => console.log(text);
 ```
 
 S nizovima:
@@ -571,27 +575,27 @@ ES moduli omogućuju bolju organizaciju/modularizaciju JS koda, odnosno grupiran
 
 ```javascript
 // provider.js file/module
-export default (name='world') => {
+export default (name = "world") => {
   console.log(`Hello ${name}!`);
-}
+};
 
 export const PI = 3.14;
 ```
 
 ```javascript
 // consumer.js file/module
-import hello from './provider';
-import { PI } from './provider';
+import hello from "./provider";
+import { PI } from "./provider";
 
-hello('Slavko'); // Hello Slavko!
-console.log(2*PI); // 6.28
+hello("Slavko"); // Hello Slavko!
+console.log(2 * PI); // 6.28
 ```
 
 ### Examples in React
 
 ```javascript
-import React, {useState, useEffect} from 'react';
-import { Link } from 'gatsby';
+import React, { useState, useEffect } from "react";
+import { Link } from "gatsby";
 import { useMutation, useSubscription } from "@apollo/react-hooks";
 import Button from "@material-ui/core/Button";
 ```
