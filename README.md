@@ -94,6 +94,8 @@ Zadaće i korisnici koje vaša aplikacija treba podržati opisani su u nastavku.
 
   1. [JavaScript for React](bits-of-javascript-react/javascript-for-react/README.md) 
 
+  2. [React crash course](bits-of-javascript-react/react-crash-course/README.md)
+
 ### Primjeri izvještaja
 
 U direktoriju [docs](docs/) možete naći nekoliko primjera izvještaja o radu na projektu _starijih kolega_.
