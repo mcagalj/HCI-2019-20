@@ -86,3 +86,44 @@ const element = React.createElement(
   'Hello, world!'
 );
 ```
+
+## Example: Responsive Navigation Menu
+
+<!-- markdownlint-disable MD033 -->
+<p align="center">
+    <img src="./images/responsive_nav_bar.png" width="600px" height="auto"/>
+    <br><br>
+    <em>What are we building?</em>
+</p>
+<!-- markdownlint-disable MD033 -->
+
+#### Planning React components (**_parent-child_** relationship)
+
+<!-- markdownlint-disable MD033 -->
+<p align="center">
+    <img src="./images/react_components.png" width="600px" height="auto"/>
+    <br><br>
+    <em>Planning React components</em>
+</p>
+<!-- markdownlint-disable MD033 -->
+
+Kod koji implementira prikazanu navigacijsku traku dostupan je u direktoriju [teaching-hci](teaching-hci/). Koraci za pokretanje koda:
+
+1. Klonirajte HCI-2019-20 repozitorij.
+2. U direktoriju `bits-of-javascript-react/react-crash-course/teaching-hci`, u kojem se nalazi datoteka `package.json` izvršite sljedeću naredbu:
+   
+   ```cmd
+   npm install
+   ```
+
+3. Konačno, pokrenite razvojni server:
+   
+   ```cmd
+   gatsby develop
+   ```
+
+   Alternativno:
+   ```cmd
+   npm run develop
+   ```
+
